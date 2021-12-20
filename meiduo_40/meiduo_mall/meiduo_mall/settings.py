@@ -89,7 +89,7 @@ ROOT_URLCONF = 'meiduo_mall.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.jinja2.Jinja2',
-        'DIRS': [os.path.join(BASE_DIR,'templates')],
+        'DIRS': [os.path.join(BASE_DIR,'templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -98,11 +98,23 @@ TEMPLATES = [
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
             ],
-            #设置jiaji2环境
-            'environment':'utils.jiaja2_env.jinja2_environment'
+            'environment':'app.base_jinja2.environment'
         },
-
     },
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'DIRS': [os.path.join(BASE_DIR, 'templates')]
+        ,
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.template.context_processors.debug',
+                'django.template.context_processors.request',
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ],
+        },
+    }
 ]
 
 WSGI_APPLICATION = 'meiduo_mall.wsgi.application'
@@ -123,17 +135,17 @@ DATABASES = {
          'ENGINE': 'django.db.backends.mysql', # 数据库引擎
         'HOST': '127.0.0.1', # 数据库主机
         'PORT': 3306, # 数据库端口
-        'USER': 'root', # 数据库用户名
-        'PASSWORD': 'mysql', # 数据库用户密码
-        'NAME': 'meiduo_mall_40' # 数据库名字
+        'USER': 'guoliangmiao', # 数据库用户名
+        'PASSWORD': 'Huawei12#$', # 数据库用户密码
+        'NAME': 'meiduo_mall' # 数据库名字
     },
     'slave': {
-         'ENGINE': 'django.db.backends.mysql', # 数据库引擎
-        'HOST': '127.0.0.1', # 数据库主机
-        'PORT': 8306, # 数据库端口
-        'USER': 'root', # 数据库用户名
-        'PASSWORD': 'mysql', # 数据库用户密码
-        'NAME': 'meiduo_mall_40' # 数据库名字
+        'ENGINE': 'django.db.backends.mysql',  # 数据库引擎
+        'HOST': '127.0.0.1',  # 数据库主机
+        'PORT': 3306,  # 数据库端口
+        'USER': 'guoliangmiao',  # 数据库用户名
+        'PASSWORD': 'Huawei12#$',  # 数据库用户密码
+        'NAME': 'meiduo_mall'  # 数据库名字
     },
 }
 DATABASE_ROUTERS = ['utils.db_router.MasterSlaveDBRouter']

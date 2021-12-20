@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PY-213.5744.248">
+    <data-source name="Django slave" uuid="9bdafcb8-4da8-4e1f-b3f0-52ecdb674594">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <user-name>guoliangmiao</user-name>
+      <schema-mapping />
+    </data-source>
+    <data-source name="Django default" uuid="953e2ca1-3ba2-4bc7-b0ed-14ee69e072ae">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <user-name>guoliangmiao</user-name>
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

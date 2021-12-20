@@ -13,8 +13,9 @@
   </component>
   <component name="NewModuleRootManager">
     <content url="file://$MODULE_DIR$" />
-    <orderEntry type="jdk" jdkName="Python 3.5.2 virtualenv at ~/.virtualenvs/py3_meiduo_mall_40" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.8 (djangoproject01)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="miduo_mall" />
   </component>
   <component name="TemplatesService">
     <option name="TEMPLATE_CONFIGURATION" value="Jinja2" />
