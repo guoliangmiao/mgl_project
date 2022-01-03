@@ -23,5 +23,6 @@ def hello():
     return "hello world"
 
 
-if __name__ == "__main__":
-    app.run()
+# if __name__ == "__main__":
+#     # app.run(debug=True) 开启调试模式运行
+#     app.run()
